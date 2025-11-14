@@ -1,0 +1,37 @@
+target-version = "py310"
+extend-include = ["*.ipynb"]
+
+[lint]
+select = [
+    "A",     # Builtins shadowing
+    "ASYNC", # Async correctness
+    "B",     # Bug risk
+    "C4",    # Comprehension improvements
+    "C90",   # Cyclomatic complexity
+    "D",     # Docstring rules
+    "DTZ",   # Datetime issues
+    "E",     # Pycodestyle errors
+    "ERA",   # Dead code
+    "F",     # Pyflakes correctness
+    "FBT",   # Boolean traps
+    "I",     # Import conventions
+    "LOG",   # Logging rules
+    "N",     # Naming conventions
+    "PTH",   # Prefer pathlib
+    "PIE",   # Misc improvements
+    "PT",    # Pytest rules
+    "RSE",   # Raise statements
+    "S",     # Security issues
+    "SIM",   # Code simplification
+    "T20",   # Print statements
+    "TID",   # Import tidiness
+    "TRY",   # Try/except patterns
+    "UP",    # Modern Python syntax
+    "W",     # Pycodestyle warnings
+]
+ignore = [
+    "E501",  # Line length
+]
+
+[format]
+quote-style = "double"

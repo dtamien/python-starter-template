@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: python-starter-template:local
+
+  doc:
+    build:
+      context: .
+      dockerfile: Dockerfile.docs
+    image: docs:local
